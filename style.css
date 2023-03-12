@@ -44,10 +44,10 @@ nav {
   padding-left: 300px;
   padding-top: 30px;
 }
-input[type=text] {
-    background: transparent;
-    border: none;
-    border-bottom: 1px solid #000000;
+input[type="text"] {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #000000;
 }
 .head-card {
   width: 100%;
@@ -66,6 +66,11 @@ input[type=text] {
   width: 600px;
   font-weight: 400;
   font-size: 20px;
+}
+.top-picks {
+  color: #ffffff;
+  font-size: 16px;
+  padding: 20px;
 }
 #title {
   font-size: 28px;
