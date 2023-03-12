@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  width: 100%;
+  background-color:#0c111b;
+  align-items: center;
+  justify-content: center;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  /* flex-direction: row; */
+  /* display: flex; */
+  padding: 10px 0;
+}
+.nav-list {
+  /* width: 50%; */
+  display: flex;
+  flex-direction: row;
+}
+.nav-list li {
+  list-style: none;
+  padding: 25px 30px;
+}
+.head-card {
+  /* display: block; */
+  width: 100%;
+  background: #030b17;
+  /* cursor: pointer; */
+  /* height: 100%; */
+  position: relative;
+  /* border-radius: 5px; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* align-self: center; */
+}
+.head-card img {
+  height: 445px;
+  width: 790px;
+  /* vertical-align: middle; */
+  position: relative;
+  left: 50%;
+  padding-top: 60px;
+  margin-left: -80px;
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* align-self: center; */
+  /* height: 100%; */
+  /* width: 100%; */
+  /* padding: 0; */
+  /* margin: 0; */
+}
+.top-cards {
+  display: flex;
+  /* flex-wrap: nowrap; */
+  flex-direction: row;
+}
+/* .card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  position: relative;
+  border: ;
+  width: 147px;
+  height: 195px;
+} */
+.card img {
+  border-radius: 20px;
+  /* position: absolute; */
+  display: block;
+  width: 147px;
+  height: 195px;
+  padding: 10px;
+  /* width: 330px; */
+  transition: transform 0.2s ease-in;
+}
+.card img:hover {
+    transform: scale(1.09);
+    cursor: pointer;
+}
+.card-text p{
+  bottom: 0;
+  opacity: 0;
+  color: #fff;
+  position: absolute;
+  padding: 15px;
+  visibility: hidden;
+  transition: visibility 0s, opacity 0.5s linear;
+  background: rgb(236,231,231);
+  background: linear-gradient(180deg, rgba(236,231,231,0) 0%, rgba(25,33,50,0.727328431372549) 18%, rgba(25,33,50,1) 44%, rgba(25,33,50,1) 100%);
+}
+.card:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.card:hover .card-text:hover {
+    visibility: visible;
+    transform: scale(1.04);
+    width: 100%;
+    opacity: 1;
+}
